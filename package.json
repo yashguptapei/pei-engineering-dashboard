@@ -16,7 +16,7 @@
   "engines": {
     "node": ">=18"
   },
-  "name": "engineering-dashboard-turporepo",
+  "name": "pei-engineering-dashboard",
   "packageManager": "npm@10.9.0",
   "workspaces": [
     "apps/*",
