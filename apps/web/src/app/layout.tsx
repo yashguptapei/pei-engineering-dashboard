@@ -1,3 +1,4 @@
+import { cn } from "@repo/ui";
 import "./globals.css";
 import "@repo/ui/styles.css";
 import type { Metadata } from "next";
@@ -18,7 +19,7 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, "bg-white text-black")}>{children}</body>
     </html>
   );
 }

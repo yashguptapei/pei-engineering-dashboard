@@ -4,7 +4,6 @@ import sharedConfig from "@repo/tailwind-config";
 const config: Config = {
   darkMode: ["class"],
   content: ["./src/**/*.tsx"],
-  prefix: "ui-",
   theme: {
     extend: {
       colors: {
