@@ -8,11 +8,14 @@
       "cache": false
     },
     "build": {
+      "env": ["BASE_API_URL"],
       "dependsOn": ["^db:generate", "^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**"]
     },
-    "lint": {},
+    "lint": {
+      "env": ["BASE_API_URL"]
+    },
     "type-check": {},
     "dev": {
       "dependsOn": ["^db:generate"],

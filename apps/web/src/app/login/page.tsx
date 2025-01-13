@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { JSX } from "react";
+import { Suspense, type JSX } from "react";
 import LoginForm from "../../components/form/login";
 
 export default function LoginPage(): JSX.Element {
@@ -10,7 +10,9 @@ export default function LoginPage(): JSX.Element {
                 <Image alt="Logo" height={50} src="/pei-group-logo.svg" width={100} />
             </div>
             {/* Login Form */}
-            <LoginForm />
+            <Suspense fallback={<div>Loading...</div>}>
+                <LoginForm />
+            </Suspense>
         </div>
     );
 }
